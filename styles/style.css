@@ -204,5 +204,17 @@
   .badge-title {
     margin-top: 10px;
   }
+
+  .popular-rewards-heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .popular-budges-heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   
   
