@@ -216,5 +216,111 @@
     flex-direction: row;
     align-items: center;
   }
+
+  .see-all-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .see-all-link {
+    margin-left: 90px;
+  }
+
+  /* Notifications page */
+  .notification-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reward-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .reward-image {
+    align-self: center;
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  .company-info{
+    margin-top: 10px;
+  }
+
+  .notification-message{
+    margin-top: 2px;
+  }
+
+  .notification-reward{
+    font-size: 23px;
+    color: #4D39CB;
+    font-weight: bold;
+    margin-top: 3px;
+  }
+
+  .notif-separator{
+    border-top: 1px solid #ccc;
+    margin-top: 2px;
+  }
+
+  .notification-reward-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    width: fit-content;
+    align-self: center;
+    border-color: grey;
+  }
+  
+  .notification-reward-container .reward-image {
+    width: 200px;
+    height: auto;
+    /* margin-bottom: 5px; */
+  }
+  
+  .notification-reward-container .notification-reward {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .notification-membership {
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0;
+    
+  }
+
+  .notification-company-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1px;
+    /* justify-content: center; */
+    /* margin-left: 138px; */
+    margin-left: 50px;
+  }
+
+  .notification-company-logo{
+    width: 11px;
+    height: 11px;
+    margin-right: 10px;
+    margin-left: 0;
+  }
+
+  .notification-company-name{
+    font-size: 10px;
+  }
+  
   
   

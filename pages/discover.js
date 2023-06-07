@@ -22,6 +22,9 @@ function Discover() {
         <div className='popular-rewards-heading'>
             <h2>🔥</h2>
             <h2>Popular Rewards</h2>
+            <div className="see-all-container">
+                <a href="#" className="see-all-link">See All</a>
+            </div>
         </div>
         <div className="discounts-container">
           {discounts.map(discount => (
@@ -44,6 +47,9 @@ function Discover() {
     <div className='popular-budges-heading'>
         <h2>⭐</h2>
         <h2>Popular Badges</h2>
+        <div className="see-all-container">
+            <a href="#" className="see-all-link">See All</a>
+        </div>
     </div>
             <div className="badge-container">
                 {badges.map(badge => (

@@ -6,6 +6,8 @@ import useNavigation from '../hooks/navigation';
 import NavBar from "./NavBar";
 
 function App() {
+  
+
   let Component
   switch(window.location.pathname){
     case "/":
