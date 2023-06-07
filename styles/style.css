@@ -1,0 +1,208 @@
+/* discount banners and container */
+.discount-banner {
+    position: relative;
+    background-color: rgb(196, 196, 196, 0.1);
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    height: 86px;
+  }
+  
+  .discount-banner h3 {
+    margin-bottom: 8px;
+  }
+  
+  .discount-banner p {
+    font-size: 16px;
+  }
+  
+  .discounts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .discount-banner-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4D39CB;
+    color: white;
+    padding: 3px;
+    border-radius: 0 0 5px 5px;
+    font-weight: bold;
+  }
+
+  .discount-banner-footer span {
+    color: rgb(248, 246, 238);
+  }
+  
+  .company-info {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 8px; */
+  }
+  
+  .company-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .company-title {
+    font-size: 14px;  
+  }
+
+  .discount-amount {
+    font-size: 18px;
+    margin-left: 10px
+  }
+
+  .for-u{
+    margin-left: 15px;
+  }
+
+  /* header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .icons {
+    display: flex;
+  }
+  
+  .icons p {
+    margin-left: 10px;
+  }
+
+  /* footer */
+  .footer-nav {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+  }
+  
+  .footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-nav li {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .footer-nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .separator {
+    border-top: 1px solid #ccc;
+    margin-top: 16px;
+  }
+
+  /* Assets page */
+  .assets-page {
+    padding: 20px;
+  }
+  
+  .company-section {
+    margin-bottom: 20px;
+  }
+  
+  .asset-company-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  
+  .asset-company-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .asset-company-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .attestations-container {
+    margin-top: 10px;
+  }
+  
+  .attestation-rectangle {
+    display: flex;
+    background-color: rgb(196, 196, 196, 0.1);
+    /* justify-content: center; */
+    align-items: center;
+    width: 327px;
+    height: 50px;
+    margin-bottom: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+  }
+
+  .membership {
+    margin-left: 15px;
+    font-weight: bold;
+  }
+  
+
+  /* Discover */
+  .discover-discount-banner-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #9C9C9C;
+    color: white;
+    padding: 3px;
+    border-radius: 0 0 5px 5px;
+    font-weight: bold;
+  }
+
+  .badge-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .badge-item {
+    text-align: center;
+  }
+  
+  .badge-image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .badge-title {
+    margin-top: 10px;
+  }
+  
+  
