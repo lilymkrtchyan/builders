@@ -22,7 +22,7 @@ function DiscountBanner() {
           {discounts.map(discount => (
             <div className="discount-banner" key={discount.id}>
               <div className="company-info">
-                <img className="company-logo" src="assets/placeholder-image.jpg" alt="Company Logo" />
+                <a href='/company-badges'><img className="company-logo" src="assets/placeholder-image.jpg" alt="Company Logo" /> </a>
                 <h3 className="company-title">{discount.title}</h3>
               </div>
 
