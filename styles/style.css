@@ -377,3 +377,66 @@
     margin-top: 0;
     padding-top: 0;
   }
+
+  .company-badge-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .company-badge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .company-badge-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .company-badge-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  
+  .company-badge-logo {
+    width: 11px;
+    height: 11px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+  
+  .company-badge-name {
+    font-size: 14px;
+    color: grey;
+    margin: 0;
+  }
+  
+  .company-badge-title {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0;
+    align-self: flex-start;
+    
+  }
+
+  .company-badge-info-title{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    width: 130px;
+    margin-top: -10px;
+    height: 60px;
+  }
+  
