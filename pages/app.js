@@ -4,9 +4,13 @@ import DiscountBanner from './DiscountBanner';
 import AssetsPage from './AssetsPage';
 import useNavigation from '../hooks/navigation';
 import NavBar from "./NavBar";
+import { useLocation } from 'react-router-dom';
+import CompanyBadges from './CompanyBadges';
+
 
 function App() {
   
+  const location = useLocation();
 
   let Component
   switch(window.location.pathname){
