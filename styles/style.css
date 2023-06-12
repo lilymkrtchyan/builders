@@ -455,3 +455,23 @@
     padding: 10px 16px;
   }
   
+/* Badge Page */
+.badge-page-image{
+  width:200px;
+  height: 300px;
+  margin-left: 75px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.badge-page-company{
+  margin-left: 150px;
+  font-size: 14px;
+}
+
+.badge-page-title{
+  margin-left: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 2px;
+}
