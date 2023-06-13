@@ -17,6 +17,13 @@ export default function CompanyBadges() {
     { id: 6, company: 'Subway', title: 'Silver Membership', image: 'assets/subway-membership.png' },
   ];
 
+  const discounts = [
+    { id: 1, title: 'Joe & The Juice', amount: '10% Discount' },
+    { id: 2, title: 'Subway', amount: 'Lorem Ipsum Sit Dolor' },
+    { id: 3, title: 'Subway', amount: 'Lorem Ipsum Sit Dolor' },
+    { id: 4, title: 'Subway', amount: 'Lorem Ipsum Sit Dolor' },
+  ];
+
   const handleItemClick = (badge) => {
     console.log('Item clicked:', badge);
     setSelectedItem(badge);
@@ -25,6 +32,11 @@ export default function CompanyBadges() {
   console.log('Selected Item:', selectedItem);
 
   if(selectedItem){
+
+    const filteredDiscounts = discounts.filter(
+      (discount) => discount.title === selectedItem.company
+    );
+
     return(
       <>
 
@@ -35,6 +47,22 @@ export default function CompanyBadges() {
         </div>
 
         <div className="notif-separator"></div>
+
+        <div className="discounts-container">
+          {filteredDiscounts.map(discount => (
+            <div className="discount-banner" key={discount.id}>
+              <div className="company-info">
+                <a href='/company-badges'><img className="company-logo" src="assets/placeholder-image.jpg" alt="Company Logo" /> </a>
+                <h3 className="company-title">{discount.title}</h3>
+              </div>
+
+              <p className="discount-amount">{discount.amount}</p>
+              <div className="discount-banner-footer">
+                Subway | <span>Silver Membership</span>
+              </div>
+            </div>
+          ))}
+        </div>
       </>
     );
   }
