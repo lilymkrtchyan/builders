@@ -1,9 +1,11 @@
 import { MdClose } from 'react-icons/md';
 import React from 'react';
 import {useState} from 'react';
+import BadgePage from './BadgePage';
 
 
-export default function CompanyBadges() {
+
+export function CompanyBadges() {
   const activePage = 'badges'; // Set the active page here
 
   const [selectedItem, setSelectedItem] = useState(null);
@@ -38,33 +40,17 @@ export default function CompanyBadges() {
     );
 
     return(
-      <>
+      
 
-        <div>
-          <img className='badge-page-image' src={selectedItem.image} alt='badge' />
-          <p className='badge-page-company'>{selectedItem.company}</p>
-          <p className='badge-page-title'>{selectedItem.title}</p>
-        </div>
+        <BadgePage
+          selectedItem = {selectedItem}
+          handleItemClick = {handleItemClick}
+          filteredDiscounts = {filteredDiscounts}
+        />
 
-        <div className="notif-separator"></div>
-
-        <div className="discounts-container">
-          {filteredDiscounts.map(discount => (
-            <div className="discount-banner" key={discount.id}>
-              <div className="company-info">
-                <a href='/company-badges'><img className="company-logo" src="assets/placeholder-image.jpg" alt="Company Logo" /> </a>
-                <h3 className="company-title">{discount.title}</h3>
-              </div>
-
-              <p className="discount-amount">{discount.amount}</p>
-              <div className="discount-banner-footer">
-                Subway | <span>Silver Membership</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </>
-    );
+        );
+ 
+   
   }
 
   return (
@@ -112,3 +98,5 @@ export default function CompanyBadges() {
     </>
   );
 }
+
+export default CompanyBadges;

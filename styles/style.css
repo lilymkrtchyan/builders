@@ -475,3 +475,45 @@
   font-weight: bold;
   margin-top: 2px;
 }
+
+
+.backIcon-image{
+  display: flex;
+}
+
+.back-icon{
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+
+.badge-page-active{
+
+}
+
+.rewards-discount-banner{
+  position: relative;
+    background-color: rgb(196, 196, 196, 0.1);
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    height: 86px;
+    margin-top: 10px;
+}
+
+.badge-page-buttons{
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.badge-page-button{
+  color: rgb(0, 0, 0, 0.25);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
