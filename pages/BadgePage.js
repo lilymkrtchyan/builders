@@ -3,6 +3,7 @@ import React from 'react';
 import {useState} from 'react';
 import CompanyBadges from './company-badges';
 import { IoIosArrowBack } from 'react-icons/io';
+import HowToEarn from './HowToEarn';
 
 
 export default function BadgePage(props) {
@@ -10,6 +11,7 @@ export default function BadgePage(props) {
         const {selectedItem, handleItemClick, filteredDiscounts} = props;
 
         const activePage = 'BadgePage';
+
 
     return (
         <>
@@ -35,7 +37,7 @@ export default function BadgePage(props) {
         </a>
         <span className="button-space"></span>
         <a
-          href='/company-rewards'
+          href='/HowToEarn'
           className={`badge-page-button ${activePage === 'HowToEarn' ? 'badge-page-active' : ''}`}
         >
          ★ How to Earn
