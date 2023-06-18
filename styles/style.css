@@ -493,11 +493,6 @@
 }
 
 
-.badge-page-active{
-  font-weight: bold;
-  color: black;
-}
-
 .rewards-discount-banner{
   position: relative;
     background-color: rgb(196, 196, 196, 0.1);
@@ -523,6 +518,11 @@
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
+}
+
+.badge-page-active{
+  font-weight: bold;
+  color: black;
 }
 
 /* HowToEarn page */
