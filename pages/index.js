@@ -4,6 +4,12 @@ import NavBar from './NavBar';
 import Header from './Header';
 
 function DiscountBanner() {
+
+  const linkStyle = {
+    textDecoration: 'none',
+    color: 'inherit',
+  }
+
   const discounts = [
     { id: 1, title: 'Joe & The Juice', amount: '10% Discount' },
     { id: 2, title: 'Subway', amount: 'Lorem Ipsum Sit Dolor' },
@@ -18,20 +24,27 @@ function DiscountBanner() {
 
       <main>
         <h1 className="for-u">For You</h1>
+
         <div className="discounts-container">
           {discounts.map(discount => (
-            <div className="discount-banner" key={discount.id}>
-              <div className="company-info">
-                <a href='/company-badges'><img className="company-logo" src="assets/placeholder-image.jpg" alt="Company Logo" /> </a>
-                <h3 className="company-title">{discount.title}</h3>
+               
+                // <a style={linkStyle} href='/redeemPop'> 
+                <div className="discount-banner" key={discount.id}> 
+                  <div className="company-info">
+                  <img className="company-logo" src="assets/placeholder-image.jpg" alt="Company Logo" /> 
+                  <h3 className="company-title">{discount.title}</h3>
+                
               </div>
+         
 
               <p className="discount-amount">{discount.amount}</p>
               <div className="discount-banner-footer">
                 Subway | <span>Silver Membership</span>
               </div>
             </div>
+            // </a> 
           ))}
+          
         </div>
       </main>
 

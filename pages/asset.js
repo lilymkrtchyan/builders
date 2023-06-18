@@ -25,7 +25,7 @@ function AssetsPage() {
         {Object.entries(companyGroups).map(([company, attestations]) => (
           <div key={company} className="company-section">
             <div className="asset-company-info">
-            <img className="asset-company-logo" src="assets/placeholder-image.jpg" alt="Placeholder" />
+          <a href='/company-badges'>  <img className="asset-company-logo" src="assets/placeholder-image.jpg" alt="Placeholder" /> </a>
               <h2 className="asset-company-name">{company}</h2>
             </div>
             <div className="attestations-container">

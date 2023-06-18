@@ -43,6 +43,7 @@
   .company-info {
     display: flex;
     align-items: center;
+    text-decoration-line: none;
     /* margin-bottom: 8px; */
   }
   
@@ -54,6 +55,7 @@
   
   .company-title {
     font-size: 14px;  
+    text-decoration: none;
   }
 
   .for-u{
@@ -63,6 +65,7 @@
   .discount-banner p {
     font-size: 16px;
     padding-bottom: 5px;
+    text-decoration: none;
   }
 
   .discount-amount {
@@ -72,7 +75,10 @@
     margin-bottom: 0;
     flex: 1;
     margin-top: 5px;
+    text-decoration: none;
   }
+
+ 
 
   /* header */
   header {
@@ -488,7 +494,8 @@
 
 
 .badge-page-active{
-
+  font-weight: bold;
+  color: black;
 }
 
 .rewards-discount-banner{
@@ -527,4 +534,53 @@
   background-color: #4D39CB;
   width: 300px;
   justify-self: center;
+}
+
+/* remeed */
+.qr-code{
+  width: 207px;
+  height: 207px;
+  margin-top: 40%;
+  margin-bottom: 5px;
+}
+
+.qr-and-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.redeem-username{
+  margin-top: 1px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.redeem-name{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.show-qr-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  color: #4D39CB;
+  background-color: rgb(139, 131, 228, 0.2);
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 105px;
+  margin-top: 10px;
+}
+
+.link-to-redeemPop {
+  text-decoration: none;
+  color: inherit;
 }

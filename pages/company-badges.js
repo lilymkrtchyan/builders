@@ -78,7 +78,7 @@ export function CompanyBadges() {
       </div>
 
       
-      <div className="company-badge-container">
+      <div className="company-badge-container"> 
         {badges.map(badge => (
           <div className="company-badge-item" key={badge.id}>
             <img className="company-badge-image" src={badge.image} alt='badge' onClick={() => {
@@ -95,6 +95,7 @@ export function CompanyBadges() {
           </div>
         ))}
       </div>
+      
     </>
   );
 }
