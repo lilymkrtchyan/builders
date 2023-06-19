@@ -1,11 +1,9 @@
 import React from "react";
-import QRredeem from './qr-redeem.js';
 import { MdClose } from 'react-icons/md';
 import Discover from './discover.js';
 
-export default function NFCRedeem() {
-
-   const activePage = 'nfc';
+export default function QRredeem() {
+    const activePage = 'qr-code';
 
     return(
         <>
@@ -21,11 +19,11 @@ export default function NFCRedeem() {
                 <p className='nfc-company-name'>Joe & The Juice</p>
                 <p className='nfc-discount'>10% Discount</p>
                 <div className='centered-image'>
-                    <img className='wifi-sign' src='assets/nfc.png' alt='wifi sign' />
+                    <img className='qr-code-sign' src='assets/theQRcode.png' alt='qr sign' />
                 </div>
 
                 <div className='nfc-info-container'>
-                    <p className='info-paragraph'>Hold your phone near NFC tag to redeem rewards.</p>
+                    <p className='qr-info-paragraph'>Show QR to redeem reward!</p>
                 </div>
             </div>
         </div>
