@@ -7,6 +7,7 @@ export default function RedeemPop() {
     return (
         <>
         
+        <div className='redeem-pop-container'>
         <img className='redeempop-company-logo' src='assets/placeholder-image.jpg' alt='placeholder company image' />
         <p className='redeempop-company-name'>Joe & The Juice</p>
         <p className='redeempop-reward'>10% Discount</p>
@@ -38,6 +39,9 @@ export default function RedeemPop() {
             <p className='paragraph-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed efficitur neque, vel molestie ligula. Lorem ipsum dolor sit amet. </p>
         </div>
 
+        <button className="redeem-button">Redeem</button>
+
+        </div>
         </>
     );
 }

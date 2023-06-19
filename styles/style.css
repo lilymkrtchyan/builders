@@ -589,19 +589,19 @@
 .redeempop-company-logo{
   width: 41px;
   height: 41px;
-  margin-top: 42px;
-  margin-left: 28px;
+  margin-top: 15px;
+  margin-left: 20px;
 }
 
 .redeempop-company-name{
- margin-left: 28px;
+ margin-left: 20px;
  color: rgb(0, 0, 0, 0.7);
  font-size: 14px;
  margin-bottom: 0px;
 }
 
 .redeempop-reward{
-  margin-left: 28px;
+  margin-left: 20px;
   font-size: 16px;
   color: black;
   font-weight: bold;
@@ -623,7 +623,7 @@
 .redeempop-requirement-container{
   display: flex;
   flex-direction: column;
-  margin-left: 28px;
+  margin-left: 20px;
   border-radius: 2px;
   border-style: none;
   border-width: 1px; 
@@ -654,7 +654,7 @@
   border-style: solid;
   border-width: 1px;
   max-width: 150px;
-  margin-left: 28px;
+  margin-left: 20px;
   margin-top: 15px;
   border-color: rgb(0, 0, 0, 0.25);
 }
@@ -679,14 +679,14 @@
 }
 
 .word-description{
-  margin-left: 28px;
+  margin-left: 20px;
   color:rgb(0, 0, 0, 0.5);
   font-size: 14px;
   font-weight: bold;
 }
 
 .paragraph-description{
-  margin-left: 28px;
+  margin-left: 20px;
   text-align: justify;
   max-width: 325px;
   font-weight: bold;
@@ -702,12 +702,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 .popup-container {
   background-color: white;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 5px;
+  z-index: 10000;
+}
+
+.redeem-pop-container {
+  width: 400px; 
+  height: 490px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 0px;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+
+.redeem-button {
+  width: 100%;
+  height: 70px;
+  /* padding: 10px; */
+  background-color: #4D39CB;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .close-button {
@@ -717,5 +747,7 @@
   border: none;
   background-color: transparent;
   font-size: 20px;
-  cursor: pointer;
+  margin-top: 50%;
+  /* cursor: pointer; */
+  z-index: 10001;
 }
