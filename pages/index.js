@@ -2,8 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import Header from './Header';
+import { useState } from 'react';
+import RedeemPop from './redeemPop';
 
 function DiscountBanner() {
+
+  const [showPopup, setShowPopup] = useState(false);
 
   const linkStyle = {
     textDecoration: 'none',
@@ -17,6 +21,11 @@ function DiscountBanner() {
     { id: 4, title: 'Subway', amount: 'Lorem Ipsum Sit Dolor' },
   ];
 
+  const openPopup = (event) => {
+    event.preventDefault();
+    setShowPopup(true);
+  };
+
   return (
     <>
     <div>
@@ -28,7 +37,7 @@ function DiscountBanner() {
         <div className="discounts-container">
           {discounts.map(discount => (
                
-                // <a style={linkStyle} href='/redeemPop'> 
+                <a style={linkStyle} href={`/?showPopup=${showPopup}`} onClick={openPopup}> 
                 <div className="discount-banner" key={discount.id}> 
                   <div className="company-info">
                   <img className="company-logo" src="assets/placeholder-image.jpg" alt="Company Logo" /> 
@@ -42,7 +51,7 @@ function DiscountBanner() {
                 Subway | <span>Silver Membership</span>
               </div>
             </div>
-            // </a> 
+            </a> 
           ))}
           
         </div>
@@ -53,6 +62,19 @@ function DiscountBanner() {
       <NavBar />
 
     
+    </div>
+            
+    <div>
+    {showPopup && (
+      <div className="popup-overlay">
+        <div className="popup-container">
+          <button className="close-button" onClick={() => setShowPopup(false)}>
+             X
+           </button>
+        <RedeemPop />
+     </div>
+  </div>
+                  )}
     </div>
     </>
   );

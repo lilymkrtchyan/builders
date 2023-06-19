@@ -584,3 +584,138 @@
   text-decoration: none;
   color: inherit;
 }
+
+/* redeemPop page */
+.redeempop-company-logo{
+  width: 41px;
+  height: 41px;
+  margin-top: 42px;
+  margin-left: 28px;
+}
+
+.redeempop-company-name{
+ margin-left: 28px;
+ color: rgb(0, 0, 0, 0.7);
+ font-size: 14px;
+ margin-bottom: 0px;
+}
+
+.redeempop-reward{
+  margin-left: 28px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.redeempop-company-title{
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  color: #4D39CB;
+}
+
+.word-requirement{
+  margin-bottom: 0px;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.redeempop-requirement-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 28px;
+  border-radius: 2px;
+  border-style: none;
+  border-width: 1px; 
+  height: 70px; 
+  max-width: 300px; 
+  padding: 10px; 
+  padding-top: 0px;
+  border-radius: 5px;
+  background-color: rgb(77, 57, 203, 0.1);
+}
+
+.redeempop-container-title{
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.exp-date-limit{
+  display: flex;
+  flex-direction: row;
+}
+
+.exp-date-container, .limit-container{
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  max-width: 150px;
+  margin-left: 28px;
+  margin-top: 15px;
+  border-color: rgb(0, 0, 0, 0.25);
+}
+
+.limit-container{
+  margin-left: 15px;
+}
+
+.word-exp-date, .word-limit{
+  font-size: 12px;
+  color:rgb(0, 0, 0, 0.5);
+  margin-left: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.date, .limit{
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+.word-description{
+  margin-left: 28px;
+  color:rgb(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.paragraph-description{
+  margin-left: 28px;
+  text-align: justify;
+  max-width: 325px;
+  font-weight: bold;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}

@@ -6,6 +6,11 @@ import useNavigation from '../hooks/navigation';
 import NavBar from "./NavBar";
 import { useLocation } from 'react-router-dom';
 import CompanyBadges from './CompanyBadges';
+import RedeemPop from './RedeemPop';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 
 function App() {
@@ -26,8 +31,11 @@ function App() {
   
   return (
   <>
+  
   <NavBar />
   <Component />
+
+  
   </>
   );
 }
