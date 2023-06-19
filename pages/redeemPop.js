@@ -1,9 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { NFCRedeem } from './nfc-redeem'
 
 
 export default function RedeemPop() {
+
+    const handleRedeem = () => {
+        // Redirect to the "nfc-redeem" page
+        window.location.href = '/nfc-redeem';
+      };
+
     return (
         <>
         
@@ -39,7 +46,7 @@ export default function RedeemPop() {
             <p className='paragraph-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed efficitur neque, vel molestie ligula. Lorem ipsum dolor sit amet. </p>
         </div>
 
-        <button className="redeem-button">Redeem</button>
+        <button className="redeem-button" onClick={handleRedeem}>Redeem</button>
 
         </div>
         </>

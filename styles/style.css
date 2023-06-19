@@ -751,3 +751,55 @@
   /* cursor: pointer; */
   z-index: 10001;
 }
+
+/* NFC Redeem page */
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.info-and-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wifi-sign{
+  width: 200px;
+  height: 95px;
+}
+
+.nfc-discount{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+.nfc-company-name{
+  font-size: 16px;
+  color:rgb(0, 0, 0, 0.25);
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.nfc-info-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  background-color: rgb(77, 57, 203, 0.2);
+  max-width: 230px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.info-paragraph{
+  margin-left: 5px;
+  text-align: center;
+  color:rgb(77, 58, 203);
+  font-weight: bold;
+  font-size: 14px;
+}
