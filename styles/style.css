@@ -752,6 +752,14 @@
   z-index: 10001;
 }
 
+.info-paragraph{
+  margin-left: 5px;
+  text-align: center;
+  color:rgb(77, 58, 203);
+  font-weight: bold;
+  font-size: 14px;
+}
+
 /* NFC Redeem page */
 .centered-container {
   display: flex;
@@ -766,6 +774,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
 }
 
 .wifi-sign{
@@ -797,14 +806,6 @@
   margin-top: 20px;
 }
 
-.info-paragraph{
-  margin-left: 5px;
-  text-align: center;
-  color:rgb(77, 58, 203);
-  font-weight: bold;
-  font-size: 14px;
-}
-
 .redeem-options {
   gap: 10px;
 }
@@ -820,6 +821,7 @@
   border-width: 1px;
   border-color: rgb(0, 0, 0, 0.25);
   border-radius: 0px 5px 5px 0;
+  margin-bottom: 10px;
 }
 
 .qr-code-button {
