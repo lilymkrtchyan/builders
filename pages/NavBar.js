@@ -7,7 +7,7 @@ export default function NavBar() {
               <a href="/" >Rewards</a>
             </li>
             <li>
-              <a href="/asset">Assets</a>
+              <a href="/badges">Badges</a>
             </li>
             <li>
               <a href="/discover">Discover</a>

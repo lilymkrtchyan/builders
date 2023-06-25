@@ -381,8 +381,12 @@
   .company-badge-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
     margin-top: 20px;
+    width: 150px;
+    height: 205px;
+    justify-content: space-between;
+    margin-left: 15px;
   }
   
   .company-badge-item {
@@ -390,12 +394,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    
   }
   
   .company-badge-image {
     width: 150px;
-    height: 150px;
+    height: 142px;
     margin-bottom: 10px;
+    border-radius: 20px 20px 0 0;
   }
   
   .company-badge-info {
@@ -428,7 +434,7 @@
     margin-top: 5px;
     margin-bottom: 0;
     align-self: flex-start;
-    
+    margin-bottom: 2px;
   }
 
   .company-badge-info-title{
@@ -887,4 +893,49 @@
   font-weight: bold;
   font-size: 14px;
   padding: 0px 10px 0px 10px;
+}
+
+/* Badges */
+
+.badge-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.badge-item {
+  width: 150px; 
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.badge-item p {
+  margin: 5px;
+}
+
+.badge-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.badges-image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 27px;
+  margin-left: 0px;
+  padding-top: 0;
+}
+
+.badges-company-name{
+  margin-left: 30px;
+}
+
+.heading-badges-word{
+  margin-left: 30px;
 }
