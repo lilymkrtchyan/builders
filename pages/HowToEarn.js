@@ -4,7 +4,8 @@ import {useState} from 'react';
 import CompanyBadges from './company-badges';
 import { IoIosArrowBack } from 'react-icons/io';
 import { ProgressBar } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import { Progress } from 'flowbite-react';
 
 
 export default function HowToEarn(props) {
@@ -50,21 +51,23 @@ export default function HowToEarn(props) {
         </a>
       </div>
 
-
-
-            {/* <ProgressBar min={0} max={100} now={60} /> */}
-            <div className='progress-bar-container'>
+           
+            
                 {requirements.map(requirement => (
                     <div key={requirement.id}>
-                        <h2>{requirement.title}</h2>
-                        <p>{requirement.amount}</p>
-                        <ProgressBar className='progress-bar'
-                            now={(requirement.completed / requirement.required) * 100} 
-                            label={`${requirement.completed}/${requirement.required}`}
-                        />
+                        <h2 className='how-to-earn-title'>{requirement.title}</h2>
+                        <p className='how-to-earn-amount'>{requirement.amount}</p>
+                        <div className='progress-container'>
+                            <div
+                             className='progress-bar'
+                             style={{ width: `${(requirement.completed / requirement.required) * 100}%` }}>
+                             </div>
+                        </div>
                     </div>
                 ))}
-            </div>
+         
+
+        
         </>
 
     );
