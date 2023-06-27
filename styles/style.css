@@ -86,11 +86,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px;
+    margin-top: 50px;
   }
   
   .profile-pic {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
+    margin-left: 30px;
   }
   
   .icons {
@@ -896,7 +898,6 @@
 }
 
 /* Badges */
-
 .badge-section {
   display: flex;
   flex-direction: column;
@@ -930,6 +931,8 @@
   gap: 27px;
   margin-left: 0px;
   padding-top: 0;
+  margin-top: 24;
+  margin-bottom: 24;
 }
 
 .badges-company-name{
@@ -938,4 +941,37 @@
 
 .heading-badges-word{
   margin-left: 30px;
+}
+
+.badge-company-small-logo{
+  height: 35px;
+  width: 35px;
+  border-radius: 3px;
+}
+
+.company-logo-name-badges{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30;
+}
+
+.small-logo-badge-item{
+  height: 12px;
+  width: 12px;
+  border-radius: 2px;
+}
+
+.badges-badge-item-company-name-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 14px;
+}
+
+.badges-badge-item-title{
+  padding-left: 2px;
+  font-size: 12px;
+  font-weight: bold;
 }

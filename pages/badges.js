@@ -22,9 +22,14 @@ function Badges() {
       <h1 className='heading-badges-word'>Badges</h1>
 
       {companyNames.map((company) => (
-  <div key={company} className="badge-section">
-    <h2 className='badges-company-name'>{company}</h2>
-    <div className="badges-image-info">
+      <div key={company} className="badge-section">
+
+      <div className='company-logo-name-badges'>
+        <img className="badge-company-small-logo" src='assets/subway-membership.png' alt='company logo' />
+        <h2 className='badges-company-name'>{company}</h2>
+      </div>
+
+      <div className="badges-image-info">
       <div className="badges-image-container">
         {badges
           .filter((badge) => badge.company === company)
@@ -33,7 +38,12 @@ function Badges() {
               <div className="badges-image">
                 <img src={badge.image} alt={badge.title} />
               </div>
-              <p>{badge.title}</p>
+              <div className='badges-badge-item-company-name-logo'>
+                <div className='small-logo-badge-item'><img  src='assets/subway-membership.png' alt='logo'></img></div>
+                <p>{company}</p>
+              </div>
+
+              <p className='badges-badge-item-title'>{badge.title}</p>
             </div>
           ))}
       </div>
