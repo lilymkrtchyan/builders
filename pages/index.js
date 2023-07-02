@@ -48,7 +48,7 @@ function DiscountBanner() {
 
               <p className="discount-amount">{discount.amount}</p>
               <div className="discount-banner-footer">
-                Subway | <span>Silver Membership</span>
+               <div className='discount-banner-footer-company'> Subway |</div>  <span>Silver Membership</span>
               </div>
             </div>
             </a> 
