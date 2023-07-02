@@ -8,8 +8,9 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 328px;
+    width: 270px;
     height: 86px;
+    margin-left: 0px;
   }
   
   .discount-banner h3 {
@@ -20,7 +21,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 10px;
+    padding: 0px 16px 16px 16px;
+    border-radius: 10px 10px 0px 0px;
   }
 
   .discount-banner-footer {
@@ -59,7 +62,7 @@
   }
 
   .for-u{
-    margin-left: 15px;
+    margin-left: 30px;
   }
 
   .discount-banner p {
@@ -109,11 +112,13 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 16px;
+    /* height: 86px; */
+    padding: 20px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
   }
   
   .footer-nav ul {
@@ -534,7 +539,6 @@
 }
 
 /* HowToEarn page */
-
 .progress-container{
   border-radius: 10px;
   background-color: white;
