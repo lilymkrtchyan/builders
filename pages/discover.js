@@ -16,7 +16,7 @@ function Discover() {
     return(
         <>
         <Header />
-        <h1>Discover</h1>
+        <h1 className='word-discover'>Discover</h1>
         <div className="separator"></div>
 
         <div className='popular-rewards-heading'>
@@ -36,7 +36,7 @@ function Discover() {
 
               <p className="discount-amount">{discount.amount}</p>
               <div className="discover-discount-banner-footer">
-                Subway | <span>Silver Membership</span>
+                <div className='discount-banner-footer-company'>Subway |</div> <span>Silver Membership</span>
               </div>
             </div>
           ))}
@@ -61,7 +61,7 @@ function Discover() {
             </div>
 
 
-        <div className="separator"></div>
+        {/* <div className="separator"></div> */}
 
         <NavBar />
         </>

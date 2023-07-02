@@ -149,6 +149,8 @@
 .separator {
   border-top: 1px solid #ccc;
   margin-top: 16px;
+  width: 327px;
+  margin-left: 30px;
 }
 
   /* Assets page */
@@ -202,7 +204,15 @@
   
 
   /* Discover */
+  .word-discover{
+    margin-left: 30px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
   .discover-discount-banner-footer{
+    display: flex;
+    flex-direction: row;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -214,10 +224,16 @@
     font-weight: bold;
   }
 
+  .discover-discount-banner-footer span{
+    margin-left: 10px;
+  }
+
   .badge-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
   
   .badge-item {
@@ -237,12 +253,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 30px;
   }
 
   .popular-budges-heading{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 30px;
   }
 
   .see-all-container {
@@ -253,7 +271,7 @@
   }
   
   .see-all-link {
-    margin-left: 90px;
+    margin-left: 60px;
   }
 
   /* Notifications page */
