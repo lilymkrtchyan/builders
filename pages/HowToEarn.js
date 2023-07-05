@@ -33,7 +33,7 @@ export default function HowToEarn(props) {
         </div>
     </div>
 
-        <div className="notif-separator"></div>
+        <div className="separator"></div>
 
         <div className="badge-page-buttons">
         <a
