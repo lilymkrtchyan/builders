@@ -284,8 +284,10 @@
   }
 
   .company-info{
+    display: flex;
+    flex-direction: row;
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 0px;
   }
 
   .notification-message{
