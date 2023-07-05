@@ -39,7 +39,7 @@ function DiscountBanner() {
                
                 <a style={linkStyle} href={`/?showPopup=${showPopup}`} onClick={openPopup}> 
                 <div className="discount-banner" key={discount.id}> 
-                  <div className="company-info">
+                  <div className="index-company-info">
                   <img className="company-logo" src="assets/placeholder-image.jpg" alt="Company Logo" /> 
                   <h3 className="company-title">{discount.title}</h3>
                 

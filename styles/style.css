@@ -1,13 +1,13 @@
 /* discount banners and container */
 .discount-banner {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: rgb(196, 196, 196, 0.1);
     border: 1px solid #ccc;
     padding: 16px;
     margin-bottom: 5px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     width: 270px;
     height: 86px;
     margin-left: 0px;
@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 0px 16px 16px 16px;
+    /* padding: 0px 16px 16px 16px; */
     border-radius: 10px 10px 0px 0px;
   }
 
@@ -51,11 +51,12 @@
     margin-left: 10px;
   }
   
-  .company-info {
+  .index-company-info {
     display: flex;
     align-items: center;
     text-decoration-line: none;
     margin-top: 0;
+    margin-left: 0;
     /* margin-bottom: 8px; */
   }
   
@@ -63,6 +64,7 @@
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    margin-left: 0;
   }
   
   .company-title {
@@ -70,6 +72,7 @@
     text-decoration: none;
     margin: 0;
     align-self: center;
+    justify-self: flex-start;
   }
 
   .for-u{
@@ -292,14 +295,16 @@
   }
 
   .notification-reward{
-    font-size: 23px;
+    font-size: 16px;
+    gap: 10px;
+    justify-self: center;
     color: #4D39CB;
     font-weight: bold;
     margin-top: 3px;
     margin-left: 30px;
     border-style: hidden;
     background-color:rgb(77, 58, 203, 0.1);
-    max-width: 86px;
+    max-width: 60px;
     border-radius: 100px;
     padding: 12px 20px;
   }
