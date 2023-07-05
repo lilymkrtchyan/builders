@@ -26,7 +26,7 @@ export default function BadgePage(props) {
         </div>
     </div>
 
-        <div className="notif-separator"></div>
+        <div className="separator"></div>
 
         <div className="badge-page-buttons">
         <a
@@ -54,7 +54,7 @@ export default function BadgePage(props) {
 
               <p className="discount-amount">{discount.amount}</p>
               <div className="discount-banner-footer">
-                Subway | <span>Silver Membership</span>
+               <div className='discount-banner-footer-company'> Subway |</div>  <span>Silver Membership</span>
               </div>
             </div>
           ))}

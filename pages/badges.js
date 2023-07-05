@@ -25,7 +25,7 @@ function Badges() {
       <div key={company} className="badge-section">
 
       <div className='company-logo-name-badges'>
-        <img className="badge-company-small-logo" src='assets/subway-membership.png' alt='company logo' />
+        <a href='/company-badges'><img className="badge-company-small-logo" src='assets/subway-membership.png' alt='company logo' /></a>
         <h2 className='badges-company-name'>{company}</h2>
       </div>
 
