@@ -22,7 +22,7 @@ export default function Notifications() {
   return (
     <>
       <div className='notification-header'>
-        <h1>Notifications</h1>
+        <h1 className='word-notifications'>Notifications</h1>
         <a href='/discover'><MdClose className="close-icon" /></a>
       </div>
       <div className="separator"></div>
