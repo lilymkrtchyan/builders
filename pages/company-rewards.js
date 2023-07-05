@@ -37,7 +37,7 @@ export default function CompanyBadges() {
 
       <main>
         
-        <div className="discounts-container">
+        <div className="discounts-container company-rewards">
           {discounts.map(discount => (
                
                 // <a style={linkStyle} href='/redeemPop'> 
@@ -51,7 +51,7 @@ export default function CompanyBadges() {
 
               <p className="discount-amount">{discount.amount}</p>
               <div className="discount-banner-footer">
-                Subway | <span>Silver Membership</span>
+               <div className='discount-banner-footer-company'> Subway |</div>  <span>Silver Membership</span>
               </div>
             </div>
             // </a> 

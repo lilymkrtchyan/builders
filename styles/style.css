@@ -420,12 +420,14 @@
     margin-right: 10px;
     margin-bottom: 0;
     padding-bottom: 0;
+    margin-left: 30px;
   }
 
   .company-badges-heading{
     font-size: 20px;
     margin-top: 0;
     padding-top: 0;
+    margin-left: 30px;
   }
 
   .company-badge-container {
@@ -436,7 +438,12 @@
     width: 150px;
     height: 205px;
     justify-content: space-between;
-    margin-left: 15px;
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+
+  .company-badge-buttons{
+    margin-top: 25px;
   }
   
   .company-badge-item {
@@ -504,6 +511,11 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .badge-button{
+    margin-left: 30px;
   }
   
   .active{
@@ -548,7 +560,7 @@
   margin-top: 3rem;
 }
 
-
+/* Company Rewards Page */
 .rewards-discount-banner{
   position: relative;
     background-color: rgb(196, 196, 196, 0.1);
@@ -561,6 +573,10 @@
     width: 328px;
     height: 86px;
     margin-top: 10px;
+}
+
+.company-rewards{
+  margin-top: 21px;
 }
 
 .badge-page-buttons{
