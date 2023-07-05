@@ -570,9 +570,10 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 328px;
+    width: 300px;
     height: 86px;
     margin-top: 10px;
+    margin-left: 15px;
 }
 
 .company-rewards{
@@ -580,7 +581,7 @@
 }
 
 .badge-page-buttons{
-  margin-left: 5px;
+  margin-left: 30px;
   margin-bottom: 5px;
   margin-top: 5px;
 }
